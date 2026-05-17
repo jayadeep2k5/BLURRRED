@@ -8,12 +8,12 @@ BLURRRED is a lightweight Chrome extension that automatically blurs WhatsApp Web
 
 ## Features
 
-- 🔒 **Auto-blur** — Sidebar chats blur instantly on page load
-- 👁️ **Active chat stays readable** — Only the open conversation is visible
-- ⚡ **Real-time** — MutationObserver handles dynamic WhatsApp updates
-- 🔄 **One-click toggle** — Enable/disable via the extension popup
-- 💾 **Persistent settings** — Your preference is remembered across sessions
-- 🛡️ **100% local** — No data collected, no external servers
+-  **Auto-blur** — Sidebar chats blur instantly on page load
+-  **Active chat stays readable** — Only the open conversation is visible
+-  **Real-time** — MutationObserver handles dynamic WhatsApp updates
+-  **One-click toggle** — Enable/disable via the extension popup
+-  **Persistent settings** — Your preference is remembered across sessions
+-  **100% local** — No data collected, no external servers
 
 ---
 
