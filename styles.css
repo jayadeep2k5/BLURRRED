@@ -1,0 +1,43 @@
+/**
+ * BLURRRED – Injected Styles for WhatsApp Web
+ * Applied via content_scripts in manifest.json
+ */
+
+/* ── Blurred sidebar chat rows ───────────────────────────────────────────── */
+.blurrred-item {
+  filter: blur(6px) !important;
+  transition: filter 0.2s ease !important;
+  user-select: none !important;
+  pointer-events: auto !important; /* still allow clicking to open chat */
+}
+
+/* Slightly reduce opacity to further mask content */
+.blurrred-item * {
+  opacity: 0.85 !important;
+}
+
+/* ── Hovering reveals a hint that it's blurred (not the content) ─────────── */
+.blurrred-item:hover {
+  filter: blur(4px) !important;
+  cursor: pointer !important;
+}
+
+/* ── Active/selected chat row stays crystal clear ───────────────────────── */
+.blurrred-active {
+  filter: none !important;
+  transition: filter 0.2s ease !important;
+}
+
+.blurrred-active * {
+  opacity: 1 !important;
+}
+
+/* ── Right-side active chat pane – never blurred ────────────────────────── */
+#main {
+  filter: none !important;
+}
+
+/* ── Smooth transition when toggling the extension ──────────────────────── */
+[data-blurrred="true"] {
+  transition: filter 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}

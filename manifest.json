@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "BLURRRED",
+  "version": "1.0.0",
+  "description": "Privacy during screen sharing, simplified. Auto-blurs WhatsApp Web sidebar chats and message previews.",
+  "author": "BLURRRED",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "BLURRRED – Privacy for WhatsApp Web"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://web.whatsapp.com/*"]
+}

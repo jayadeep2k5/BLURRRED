@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLURRRED</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+            <path d="M12 4C7 4 2.73 7.11 1 12c1.73 4.89 6 8 11 8s9.27-3.11 11-8c-1.73-4.89-6-8-11-8z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M3 3L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="slash"/>
+          </svg>
+        </div>
+        <span class="logo-text">BLURRRED</span>
+      </div>
+      <div class="version">v1.0</div>
+    </div>
+
+    <!-- Status Card -->
+    <div class="status-card" id="statusCard">
+      <div class="status-indicator">
+        <div class="pulse-ring" id="pulseRing"></div>
+        <div class="status-dot" id="statusDot"></div>
+      </div>
+      <div class="status-text">
+        <span class="status-label" id="statusLabel">Loading…</span>
+        <span class="status-sub" id="statusSub">Checking extension state</span>
+      </div>
+    </div>
+
+    <!-- Toggle -->
+    <div class="toggle-row">
+      <span class="toggle-label">Blur Sidebar</span>
+      <label class="toggle-switch" for="blurToggle" aria-label="Toggle blur">
+        <input type="checkbox" id="blurToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Info rows -->
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-icon">🔒</div>
+        <div class="info-text">
+          <strong>100% Local</strong>
+          <span>No data collected</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">⚡</div>
+        <div class="info-text">
+          <strong>Real-time</strong>
+          <span>Dynamic updates</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>Only works on</span>
+      <a href="https://web.whatsapp.com" target="_blank" class="whatsapp-link">web.whatsapp.com</a>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
